@@ -1,0 +1,35 @@
+.cabeza {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  padding: 6px;
+  box-sizing: border-box;
+}
+
+.cabeza a {
+  padding-right: 15px;
+}
+
+a {
+  line-height: 24px;
+  font-size: 14px;
+  font-family: arial, sans-serif;
+  color: #202124;
+  text-decoration-line: none;
+  padding-left: 15px;
+}
+
+a:hover {
+  text-decoration-line: underline;
+}
+
+.pie {
+  background: #f2f2f2;
+}
+
+.uU7dJb {
+  padding: 15px 30px;
+  border-bottom: 1px solid #dadce0;
+  font-size: 15px;
+  color: #70757a;
+}
