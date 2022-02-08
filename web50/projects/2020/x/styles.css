@@ -4,6 +4,7 @@
   align-items: center;
   padding: 6px;
   box-sizing: border-box;
+  justify-content: right;
 }
 
 .cabeza a {
@@ -12,7 +13,7 @@
 
 a {
   line-height: 24px;
-  font-size: 14px;
+  font-size: 13px;
   font-family: arial, sans-serif;
   color: #202124;
   text-decoration-line: none;
@@ -32,4 +33,17 @@ a:hover {
   border-bottom: 1px solid #dadce0;
   font-size: 15px;
   color: #70757a;
+}
+
+body,
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 14px;
+  font-family: arial, sans-serif;
+  color: #202124;
 }
