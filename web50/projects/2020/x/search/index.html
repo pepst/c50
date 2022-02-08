@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Search</title>
+
+  <link rel="stylesheet" href="styles.css"/>
+
+  <style>
+
+
+    body,
+    html {
+      
+      min-width: 400px;
+
+    }
+
+
+
+
+
+
+    #barra {
+      background-color: transparent;
+      border: none;
+      margin: 0;
+      padding: 0;
+      color: rgba(0, 0, 0, .87);
+      word-wrap: break-word;
+      outline: none;
+      display: flex;
+      flex: 1;
+
+      height: 34px;
+      font-size: 16px;
+    }
+
+
+
+
+    #suerte,
+    #buscar {
+      background-color: #f8f9fa;
+      border: 1px solid #f8f9fa;
+      border-radius: 4px;
+      color: #3c4043;
+      font-family: arial, sans-serif;
+      font-size: 14px;
+      margin: 11px 4px;
+      padding: 0 16px;
+      line-height: 27px;
+      height: 36px;
+      min-width: 54px;
+      text-align: center;
+      cursor: pointer;
+      user-select: none;
+    }
+
+    #suerte:hover,
+    #buscar:hover {
+      box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
+      background-color: #f8f9fa;
+      border: 1px solid #dadce0;
+      color: #202124;
+    }
+
+    #buscar:focus,
+    #suerte:focus {
+      border: 1px solid #4285f4;
+      outline: none;
+    }
+
+    #cajabarra {
+      margin: 0 auto;
+      width: 640px;
+      padding-top: 6px;
+      width: auto;
+      max-width: 584px;
+      position: relative;
+    }
+
+    #cajita {
+      display: flex;
+
+    }
+
+    #botones {
+      padding-top: 18px;
+      height: 70px;
+    }
+
+    .mitad {
+
+      padding: 20px;
+    }
+
+
+    .caja {
+      flex-shrink: 0;
+      box-sizing: border-box;
+    }
+
+    .img {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 92px;
+      max-height: 290px;
+      height: calc(100% - 560px);
+
+    }
+
+
+
+    #imggoogle {
+      max-height: 100%;
+      max-width: 100%;
+      object-fit: contain;
+      object-position: center bottom;
+      width: auto;
+    }
+
+    .contenedor {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+
+    .cajaimg {
+      margin-top: auto;
+      height: 100%;
+      max-height: 92px;
+      position: relative;
+    }
+
+    .abajo {
+      flex-grow: 1;
+    }
+
+
+
+    .RNNXgb {
+      display: flex;
+      z-index: 3;
+      height: 44px;
+      background: #fff;
+      border: 1px solid #dfe1e5;
+      box-shadow: none;
+      border-radius: 24px;
+      margin: 0 auto;
+      width: 638px;
+      width: auto;
+      max-width: 584px;
+    }
+
+    .SDkEP {
+      flex: 1;
+      display: flex;
+      padding: 5px 8px 0 14px;
+    }
+
+    .kk {
+      display: flex;
+      flex: 1;
+      flex-wrap: wrap
+    }
+
+    .iblpc {
+      display: flex;
+      align-items: center;
+      padding-right: 13px;
+      margin-top: -5px;
+    }
+
+    .CcAdNb {
+      margin: auto;
+    }
+
+    .QCzoEc {
+      margin-top: 3px;
+      color: #9aa0a6;
+      height: 20px;
+      width: 20px;
+    }
+
+    .z1asCe {
+      display: inline-block;
+      fill: currentColor;
+      height: 24px;
+      line-height: 24px;
+      position: relative;
+      width: 24px;
+    }
+
+    .RNNXgb:hover,
+    .RNNXgb:focus {
+      background-color: #fff;
+      box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+      border-color: rgba(223, 225, 229, 0);
+    }
+
+    center {
+      display: block;
+      text-align: -webkit-center;
+    }
+  </style>
+</head>
+
+
+<body>
+
+  <div class="contenedor">
+    <div class="caja cabeza">
+      <div>
+        <a href=image.html>Images</a>
+        <a href=advanced.html>Advanced Search</a>
+      </div>
+    </div>
+
+
+
+    <div class="caja img ">
+      <div class="cajaimg">
+        <img id="imggoogle" alt="Google" heigh="92" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" width="272">
+      </div>
+    </div>
+
+
+    <div class="caja mitad">
+
+
+
+
+      <form action="https://www.google.com/search">
+
+        <div id=cajabarra>
+
+          <div class="RNNXgb">
+            <div class="SDkEP">
+              <div class="iblpc">
+                <div class="CcAdNb">
+                  <span class="QCzoEc z1asCe">
+                    <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                      <path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path>
+                    </svg>
+                  </span>
+                </div>
+              </div>
+
+              <div class="kk">
+
+                <input type="text" id="barra" name="q">
+
+              </div>
+
+
+
+            </div>
+
+
+
+          </div>
+          <div id="botones">
+            <center>
+              <input type="submit" id="buscar" value="Google Search">
+              <input type="submit" id="suerte" name="btnI" value="I'm Feeling Lucky">
+            </center>
+          </div>
+
+        </div>
+      </form>
+
+    </div>
+
+    <div class="caja abajo">
+
+    </div>
+
+    <div class="caja pie">
+      <div class="uU7dJb">México</div>
+
+    </div>
+  </div>
+
+</body>
+
+</html>
+
+
+<!-- <input type="hidden" name="btnI" value="I'm+Feeling+Lucky+">      background-color: rgba(0,0,0,0.20);-->
