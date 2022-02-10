@@ -8,20 +8,12 @@
 
   <style>
 
-
     body,
     html {
-      
       min-width: 400px;
-
     }
 
-
-
-
-
-
-    #barra {
+    input[type="text"] {
       background-color: transparent;
       border: none;
       margin: 0;
@@ -31,16 +23,12 @@
       outline: none;
       display: flex;
       flex: 1;
-
       height: 34px;
       font-size: 16px;
     }
 
-
-
-
     #suerte,
-    #buscar {
+    input[value="Google Search"] {
       background-color: #f8f9fa;
       border: 1px solid #f8f9fa;
       border-radius: 4px;
@@ -58,20 +46,20 @@
     }
 
     #suerte:hover,
-    #buscar:hover {
+    input[value="Google Search"]:hover {
       box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
       background-color: #f8f9fa;
       border: 1px solid #dadce0;
       color: #202124;
     }
 
-    #buscar:focus,
+    input[value="Google Search"]:focus,
     #suerte:focus {
       border: 1px solid #4285f4;
       outline: none;
     }
 
-    #cajabarra {
+    #cajabarraeicono {
       margin: 0 auto;
       width: 640px;
       padding-top: 6px;
@@ -95,7 +83,6 @@
       padding: 20px;
     }
 
-
     .caja {
       flex-shrink: 0;
       box-sizing: border-box;
@@ -110,8 +97,6 @@
       height: calc(100% - 560px);
 
     }
-
-
 
     #imggoogle {
       max-height: 100%;
@@ -138,9 +123,7 @@
       flex-grow: 1;
     }
 
-
-
-    .RNNXgb {
+    .cajabarra {
       display: flex;
       z-index: 3;
       height: 44px;
@@ -154,47 +137,42 @@
       max-width: 584px;
     }
 
-    .SDkEP {
+    .cajaiconoytexto {
       flex: 1;
       display: flex;
       padding: 5px 8px 0 14px;
     }
 
-    .kk {
+    .cajatexto {
       display: flex;
       flex: 1;
       flex-wrap: wrap
     }
 
-    .iblpc {
+    .cajaicono {
       display: flex;
       align-items: center;
       padding-right: 13px;
       margin-top: -5px;
     }
 
-    .CcAdNb {
+    .cajasvn {
       margin: auto;
     }
 
-    .QCzoEc {
+    .icono {
       margin-top: 3px;
       color: #9aa0a6;
       height: 20px;
       width: 20px;
-    }
-
-    .z1asCe {
+      line-height: 24px;
       display: inline-block;
       fill: currentColor;
-      height: 24px;
-      line-height: 24px;
       position: relative;
-      width: 24px;
     }
 
-    .RNNXgb:hover,
-    .RNNXgb:focus {
+    .cajabarra:hover,
+    .cajabarra:focus {
       background-color: #fff;
       box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
       border-color: rgba(223, 225, 229, 0);
@@ -210,6 +188,7 @@
 
 <body>
 
+  
   <div class="contenedor">
     <div class="caja cabeza">
       <div>
@@ -217,8 +196,6 @@
         <a href=advanced.html>Advanced Search</a>
       </div>
     </div>
-
-
 
     <div class="caja img ">
       <div class="cajaimg">
@@ -229,18 +206,14 @@
 
     <div class="caja mitad">
 
-
-
-
       <form action="https://www.google.com/search">
 
-        <div id=cajabarra>
-
-          <div class="RNNXgb">
-            <div class="SDkEP">
-              <div class="iblpc">
-                <div class="CcAdNb">
-                  <span class="QCzoEc z1asCe">
+        <div id="cajabarraeicono">
+          <div class="cajabarra">
+            <div class="cajaiconoytexto">
+              <div class="cajaicono">
+                <div class="cajasvn">
+                  <span class="icono">
                     <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                       <path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path>
                     </svg>
@@ -248,22 +221,18 @@
                 </div>
               </div>
 
-              <div class="kk">
+              <div class="cajatexto">
 
-                <input type="text" id="barra" name="q">
+                <input type="text" name="q">
 
               </div>
 
-
-
             </div>
-
-
-
           </div>
+          
           <div id="botones">
             <center>
-              <input type="submit" id="buscar" value="Google Search">
+              <input type="submit" value="Google Search">
               <input type="submit" id="suerte" name="btnI" value="I'm Feeling Lucky">
             </center>
           </div>
